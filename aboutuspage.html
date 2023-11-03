@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/fontawesome-all.min.css" rel="stylesheet" />
+  <link href="css/swiper.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="css/timeline.css" rel="stylesheet" />
+  <link href="css/new-style.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css" />
+  <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css" />
+  <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css" />
+  <link href="plugins/jquery-datepicker/jquery-ui.css" rel="stylesheet" type="text/css" />
+  <link href="css/featured-card.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Favicon  -->
+  <link rel="icon" href="logo/udyam_sarathi_logo.png" alt="logo Udyam Sarathi" />
+  <link rel="stylesheet" href="css/udyam.css"/>
+  <link rel="stylesheet" href="css/services.css"/>
+  <link rel="stylesheet" href="css/udyam-mobile-view.css"/>
+
+    <style>
+        .banner {
+            display: flex;
+            background-color: #ffffff;
+            padding: 20px 0;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .icon {
+            text-align: center;
+            margin: 0 10px;
+
+            
+            flex: 1;
+            
+            background-color: #fff;
+            border-radius: 5px;
+        
+        }
+
+        .icon img {
+            width: 40%;
+            max-width: 100%; /* Allow images to scale down on smaller screens */
+        }
+
+        .description {
+            text-align: center;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap; /* Allow cards to wrap to the next line on smaller screens */
+            justify-content: center;
+            background-color: #ffffff;
+            padding: 20px 0;
+        }
+
+        .card {
+            text-align: center;
+            margin: 0 10px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            flex: 1; /* Make the cards evenly distribute on smaller screens */
+        }
+
+        .card img {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .card-description {
+            text-align: center;
+        }
+
+       
+
+        .text-container {
+            display: flex;
+            flex-direction: column; /* Stack the text on smaller screens */
+            padding: 20px 0;
+            justify-content: center; /* Center align text on smaller screens */
+            flex-wrap: wrap;
+        }
+
+        .stats-banner {
+    display: flex;
+    background-image: url('https://shgeshop.com/wp-content/uploads/2020/12/Map.png?id=241');
+    background-size: cover; /* Ensure the background image covers the entire element */
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+        .stat {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            
+            border-radius: 5px;
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 7.5rem;
+        }
+
+        .banner-container {
+            display: flex;
+            justify-content: left; /* Adjusted to align content to the left */
+            flex-wrap: wrap;
+        }
+
+        .icons {
+            flex: 1;
+            text-align: left; /* Adjusted to align text to the left */
+            margin: 10px;
+            font-size: 18px;
+            line-height: 140%;
+        }
+
+        .icons ul {
+            list-style-type: disc; /* Adjusted the list style */
+            padding-left: 20px;
+        }
+
+
+       
+       
+       
+    </style>
+</head>
+<body display="background-color:red";>
+  <!-- login div -->
+
+  <div class="loginDiv fixed-top">
+    <a href="log-in.html">
+      <button class="LoginButton">Log in</button>
+    </a>
+  </div>
+  
+    <!-- Navigation -->
+    <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
+      <div class="container">
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image2" href="index.html"><img src="logo/udyam_sarathi_logo.png" alt="logo-image Udyam Sarathi" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  
+        <a class="navbar-brand logo-image" href="index.html"><img src="logo/G20_India_2023_logo.svg.png" alt="logo-image Udyam Sarathi" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  
+        <a class="navbar-brand logo-image" href="index.html"><img src="logo/digital-india.png" alt="logo-image Udyam Sarathi" /></a>
+  
+  
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text" href="index.html">Ioniq</a> -->
+  
+        <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav ms-auto navbar-nav-scroll">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Business section</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Funding </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Traning</a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Marketing</a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="sign-up.html">Register Myself</a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link active" href="aboutuspage.html">About Us</a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="ContactUs page/ContactUs.html">Contact Us</a>
+            </li>
+          </ul>
+          <span class="nav-item">
+            <!-- <a class="btn-outline-sm" href="log-in.html">Log in</a> -->
+          </span>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="about-container" style="max-width: 100%; ">
+        <img alt="" src="https://shgeshop.com/wp-content/uploads/2023/07/about-us-page-shgeshop.jpg" style="width: 100%; max-width: 100%;" />
+    </div>
+
+
+    
+        <div class="banner">
+            <div class="icon">
+                <img alt="" src="https://shgeshop.com/wp-content/uploads/2023/06/icons8-shipping-90.png" />
+                <div style="font-size: 15px; text-align: center; word-wrap: break-word;">
+                    <h3>Free Shipping Worldwide</h3>
+                    <div>Our products are free in delivery</div>
+                    <div>after shopping on ₹999</div>
+                </div>
+            </div>
+
+            <div class="icon">
+                <img alt="" src="https://shgeshop.com/wp-content/uploads/2023/06/icons8-gift-box-90.png" />
+                <div style="font-size: 15px; text-align: center; word-wrap: break-word;">
+                   
+                    <h3>Weekly Gifts&nbsp; Members</h3>
+                    <div>We are your one-stop</div>
+                    <div>shop for nationwide online store</div>
+                </div>
+            </div>
+
+            <div class="icon">
+                <img alt="" src="https://shgeshop.com/wp-content/uploads/2023/06/icons8-money-90-3.png" />
+                <div style="font-size: 15px; text-align: center; word-wrap: break-word;">
+                    <h3>Money Back Guarantee</h3>
+                    <div>Start saving straight</div>
+                    <div>away with discount offer on items.</div>
+                </div>
+            </div>
+
+            <div class="icon">
+                <img alt="" src="https://shgeshop.com/wp-content/uploads/2023/06/icons8-last-24-hours-90.png" />
+                <div style="font-size: 15px; text-align: center; word-wrap: break-word;">
+                    <h3>24/7 Supermarket Help</h3>
+                  <div>We work for all customer to</div>
+				  <div> make satisfied shoppers value.</div>
+                </div>
+            </div>
+          
+        </div>
+
+
+        <div class="card-container">
+            <div class="card">
+                <img alt="" src="https://shgeshop.com/wp-content/uploads/2023/06/Empowering-self-help-groups-3-1.png" title="Card 1" />
+                <div style="font-size: 15px; line-height: 140%;">
+                    <h2>What Do We Do?</h2>
+                    <p>Welcome to our platform! At KIT Intellect, we are passionate about empowering self-help groups to showcase and sell their incredible products. We offer a comprehensive and user-friendly ecommerce platform designed specifically for these groups. With our intuitive platform, self-help groups can effortlessly set up their online stores, showcase their unique products, and connect with potential customers from all around the world. We provide a range of essential tools and features to streamline the selling process, including secure payment gateways, inventory management, and order tracking.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img alt="" src="https://shgeshop.com/wp-content/uploads/2023/06/Empowering-self-help-groups-5-1.png" title="Card 3" />
+                <div style="font-size: 15px; line-height: 140%;">
+                    <h2>Mission</h2>
+                    <p>Our mission is to support and uplift SHGs through our ecommerce platform. We strive to provide a user-friendly and secure online marketplace that enables SHGs to showcase their unique products, connect with customers, and generate sustainable income. We are committed to promoting fair trade practices, ensuring transparent transactions, and providing a platform that empowers SHGs to grow their businesses, improve their livelihoods, and contribute to the socio-economic development of their communities.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img alt="" src="https://shgeshop.com/wp-content/uploads/2023/06/Empowering-self-help-groups-6-1.png" title="Card 2" />
+                <div style="font-size: 15px; line-height: 140%;">
+                    <h2>Vision</h2>
+                    <p>Our vision is to be a leading ecommerce platform that empowers Self Help Groups (SHGs) by providing them with a sustainable and inclusive marketplace. We aim to create opportunities for SHGs to showcase and sell their products, reaching a wider customer base and enhancing their economic independence. Through our platform, We envision a future where every SHG has access to a user-friendly and inclusive online platform, enabling them to showcase their products, connect with customers globally.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="stats-banner">
+                <div class="stat">
+                    <h2 style=" color: #e95d2a;">26057+</h2>
+                    <h3>SHG Members Empowered</h3>
+                </div>
+                <div class="stat">
+                    <h2 style=" color: #e95d2a;">10K</h2>
+                    <h3>Worldwide Distributors</h3>
+                </div>
+                <div class="stat">
+                    <h2 style=" color: #e95d2a;">550+</h2>
+                    <h3>Receive Daily Orders</h3>
+                </div>
+                <div class="stat">
+                    <h2 style=" color: #e95d2a;">100%</h2>
+                    <h3>Get Growth Per Year</h3>
+                </div>
+                <div class="stat">
+                    <h2 style=" color: #e95d2a;">9150+</h2>
+                    <h3>Product Delivery on Pin-Codes</h3>
+                </div>
+            
+        </div>
+	
+
+        <div style="font-size: 20px; line-height: 140%; text-align: center; word-wrap: break-word;">
+            <h1>We Aim To</h1>
+          </div>
+
+
+
+
+          <div class="container">
+            <div class="banner-container">
+                <div class="icons">
+                    <ul>
+                        <li>
+                            <strong>Empower Self-Help Groups</strong>: We strive to empower self-help groups by providing them with a reliable and accessible marketplace to showcase and sell their products, helping them gain recognition and generate sustainable income.
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="icons">
+                    <ul>
+                        <li>
+                            <strong>Foster Economic Independence</strong>: We are committed to promoting economic independence by connecting self-help groups directly with consumers, eliminating intermediaries, and ensuring fair and transparent pricing for their products.
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="icons">
+                    <ul>
+                        <li>
+                            <strong>Support Sustainable Livelihoods</strong>: We support the creation of sustainable livelihoods by promoting environmentally friendly practices, encouraging the use of locally sourced materials, and fostering a culture of innovation and skill development within self-help groups.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+   
+ 
+        <div class="container">
+            <div class="banner-container">
+                <div class="icons">
+                    <ul>
+                        <li>
+                            <strong>Promote Social Impact</strong>: We believe in the power of social impact and aspire to create a positive change in the lives of self-help groups. Through our platform, we aim to raise awareness about their work, promote inclusivity, and contribute to community development initiatives.
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="icons">
+                    <ul>
+                        <li>
+                            <strong>Enhance Access and Convenience</strong>: We are dedicated to creating a seamless and convenient shopping experience for customers, allowing them to explore and purchase unique products made by self-help groups, while supporting a noble cause.
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="icons">
+                    <ul>
+                        <li>
+                            <strong>Build Trust and Transparency</strong>: We prioritize trust and transparency in all our operations. We ensure that customers can make informed choices by providing detailed information about the self-help groups, their products, and the impact their purchase can have.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <h3 style="font-size: 18px; line-height: 140%; justify-content: center; text-align: center;">By adhering to our vision and mission, we strive to create a sustainable e-commerce platform that not only connects self-help groups with customers but also acts as a catalyst for their growth, empowerment, and economic well-being.</h3>
+
+        </div>
+
+        <footer class="footer-section">
+            <div class="container">
+              <div class="footer-cta py-2">
+                <div class="row">
+                  <div class="col-xl-4 col-md-4 mb-30" style="padding-top: 20px;">
+                    <div class="single-cta">
+                      <!-- <i class="fas fa-map-marker-alt"></i> -->
+                      <div class="cta-text">
+                        <h4>Find us</h4>
+                        <span>KIT Intellect technologies private limited
+                          No A-10, Bhakti plaza, near Breman chowk, Vidyapeeth Rd, Siddarth Nagar Society, Aundh, Pune, Maharashtra 411027</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-4 mb-30" style="padding-top: 50px;">
+                    <div class="single-cta">
+                      <i class="fas fa-phone"></i>
+                      <div class="cta-text">
+                        <h4>Call us</h4>
+                        <span>+91 8459172859</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-4 mb-30" style="padding-top: 50px;">
+                    <div class="single-cta">
+                      <i class="far fa-envelope-open"></i>
+                      <div class="cta-text">
+                        <h4>Mail us</h4>
+                        <span>info@shgeshop.com</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-content pt-3 pb-3">
+                <div class="row">
+                  <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                      <div class="footer-logo">
+                        <!-- <a href="index.html"><img src="#" class="img-fluid" alt="brand-logo"></a> -->
+                      </div>
+                      <div class="footer-text">
+                        <p>SHGeShop gives platform for Self Help Groups to sell their products. Assign Trainers to SHGs to give
+                          training on how to make products, how to do marketing of products, overall training on retailing
+                          products online and offline mode.</p>
+                      </div>
+                      <div class="footer-social-icon">
+                        <span>Follow us</span>
+                        <a href="https://www.facebook.com/profile.php?id=61553188132211"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                        <a href="https://twitter.com/Udyamsarathi"><i class="fab fa-twitter twitter-bg"></i></a>
+                        <!-- <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a> -->
+                        <a href="https://www.instagram.com/udyamsarathi/"><i class="fab fab fa-instagram instagram-bg"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                      <div class="footer-widget-heading">
+                        <h3>Useful Links</h3>
+                      </div>
+                      <ul>
+                        <li><a href="#">Home</a></li>
+                        <!-- <li><a href="#">about</a></li> -->
+                        <!-- <li><a href="#">services</a></li> -->
+                        <li> <a href="index.html">Business Section</a></li>
+                        <li><a href="index.html">Lone Funding</a></li>
+                        <li> <a href="index.html">Traning Hub </a></li>
+                        <li><a href="index.html">Marketing</a></li>
+                        <!-- <li><a href="#shop">My Shop</a></li> -->
+                        <li><a href="index.html">Business</a></li>
+                        <li><a href="ContactUs page/ContactUs.html">Contact Us</a></li>
+                        <li><a href="aboutuspage.html">About Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                      <div class="footer-widget-heading">
+                        <h3>Subscribe</h3>
+                      </div>
+                      <div class="footer-text mb-25">
+                        <p>Don’t miss to subscribe to our News feeds, kindly fill the form below.</p>
+                      </div>
+                      <div class="subscribe-form">
+                        <form action="#">
+                          <input type="text" placeholder="Email Address">
+                          <button><i class="fab fa-telegram-plane"></i></button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="copyright-area">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                      <p>Copyright &copy; 2022, All Right Reserved <a href="#">SHGeShop</a></p>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                    <div class="footer-menu">
+                      <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Terms</a></li>
+                        <li><a href="index.html">Privacy</a></li>
+                        <li><a href="index.html">Policy</a></li>
+                        <li><a href="ContactUs page/ContactUs.html">Contact</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+    
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <!-- Scripts -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Bootstrap framework -->
+        <script src="js/swiper.min.js"></script>
+        <!-- Swiper for image and text sliders -->
+        <script src="js/purecounter.min.js"></script>
+        <!-- Purecounter counter for statistics numbers -->
+        <script src="js/replaceme.min.js"></script>
+        <!-- ReplaceMe for rotating text -->
+        <script src="js/scripts.js"></script>
+        <!-- Custom scripts -->
+        <script src="plugins/greensock/TweenMax.min.js"></script>
+        <script src="plugins/greensock/TimelineMax.min.js"></script>
+        <script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+        <script src="plugins/greensock/animation.gsap.min.js"></script>
+        <script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+        <script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+        <script src="plugins/easing/easing.js"></script>
+        <script src="plugins/parallax-js-master/parallax.min.js"></script>
+        <script src="plugins/jquery-datepicker/jquery-ui.js"></script>
+        <script src="js/custom.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/b27d57f29f.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>

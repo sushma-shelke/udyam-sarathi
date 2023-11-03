@@ -1,0 +1,38 @@
+
+
+.c-contact{
+    font-size: 16px;
+    color:blue;
+    font-weight:500;
+    
+}  
+
+.h-w-color{
+    color:white;
+    background-color:#337AB7;
+    padding-left:24px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 15px;
+    text-decoration: none;
+    width: 220px;
+    border: 2px solid white;
+}
+
+.h-w-color:hover {
+    color:#337AB7;
+    border-color: #337AB7;
+    background-color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.text-color{
+    /* color:blue; */
+    color: #337AB7;
+    font-size: 23px;
+}
+

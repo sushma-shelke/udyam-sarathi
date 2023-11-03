@@ -1,0 +1,480 @@
+:root {
+    --color-bg: #eeedeb;
+    --color-title: #0e1c4e;
+    --color-summary-tulip: #ffe2e4;
+    --color-summary-tulip-highlight: #f37f85;
+    --color-summary-green: #e5ffe1;
+    --color-summary-green-highlight: #299617;
+    --color-summary-dark-blue: #ebedff;
+    --color-summary-dark-blue-highlight: #0c1660;
+    --color-summary-blue: #dffcff;
+    --color-summary-blue-highlight: #4BC7CF;
+    --color-summary-orange: #ffedeb;
+    --color-summary-orange-highlight: #f67105;
+    --color-summary-golden: #ffffe7;
+    --color-summary-golden-highlight: #92926E;
+    --color-summary-berry: #ffecf6;
+    --color-summary-berry-highlight: #A50B5E;
+    --color-summary-frost-bite: #ffe9f7;
+    --color-summary-frost-bite-highlight: #E936A7;
+    --color-summary-lime: #f6ffdd;
+    --color-summary-lime-highlight: #B2F302;
+    --color-summary-pine-tree: #eafffd;
+    --color-summary-pine-tree-highlight: #01786F;
+    --color-summary-pdp: #e5fff0;
+    --color-summary-pdp-highlight: #68DD9B;
+    --color-summary-3: #fff0f3;
+    --color-summary-3-highlight: #ffb3c0;
+    --color-summary-violet: #ffebf1;
+    --color-summary-violet-highlight: #641C34;
+    --color-summary-2: #fafaff;
+    --color-summary-2-highlight: #b4b3ff;
+    --color-summary-sheen-green: #f4ffde;
+    --color-summary-sheen-green-highlight: #73ac00;
+    --color-summary-sky-blue: #e1fbff;
+    --color-summary-sky-blue-highlight: #2FD9F4;
+    --color-summary-brown: #fff0e7;
+    --color-summary-brown-highlight: #926F5B;
+    --color-summary-pigeon-blue: #ebf1ff;
+    --color-summary-pigeon-blue-highlight: #606E8C;
+    --color-summary-lhd: #fff4d5;
+    --color-summary-lhd-highlight: #FDC11A;
+    --color-summary-traffic-purple: #ede4ff;
+    --color-summary-traffic-purple-highlight: #6a34d5;
+    --color-summary-icd: #fff3f5;
+    --color-summary-icd-highlight: #CEB1B6;
+    --color-summary-bnd: #f9dfde;
+    --color-summary-bnd-highlight: #A22520;
+    --color-summary-vc: #f9e4ef;
+    --color-summary-vc-highlight: #b64382;
+    --color-summary-bk: #ece9ff;
+    --color-summary-bk-highlight: #444159;
+    --color-summary-orange: #fff3ea;
+    --color-summary-orange-highlight: #FF8833;
+    --color-summary-insrnc: #e4e4ff;
+    --color-summary-insrnc-highlight: #4f52ff;
+    --color-summary-sky-blue: #e1fbff;
+    --color-summary-sky-blue-highlight: #2FD9F4;
+    --color-summary-ismt: #e6fffd;
+    --color-summary-ismt-highlight: #2ba99c;
+    --color-summary-frost-bite: #ffe9f7;
+    --color-summary-frost-bite-highlight: #E936A7;
+    --color-summary-gs: #fbfff4;
+    --color-summary-gs-highlight: #73AC00;
+    --color-summary-smp: #ecebff;
+    --color-summary-smp-highlight: #B4B3FF;
+    --color-summary-sud: #fffbf1;
+    --color-summary-sud-highlight: #FDC11A;
+    --color-summary-profile-one-training: #fae8e9;
+    --color-summary-profile-one-training-highlight: #F37F85;
+    --color-summary-profile-online-training: #f2fff0;
+    --color-summary-profile-online-training-highlight: #299617;
+    --color-summary-profile-workshop: #e5e8f8;
+    --color-summary-profile-workshop-highlight: #0C1660;
+    --color-summary-profile-gov-module: #edfffe;
+    --color-summary-profile-gov-module-highlight: #01786F;
+    --color-summary-profile-rec-video: #fdf7f3;
+    --color-summary-profile-rec-video-highlight: #926F5B;
+    --color-summary-profile-gov-training: #fbfbe7;
+    --color-summary-profile-gov-training-highlight: #92926E;
+    --color-summary-profile-skill: #e8fafb;
+    --color-summary-profile-skill-highlight: #4BC7CF;
+    --color-summary-profile-training-center: #ffeaf7;
+    --color-summary-profile-training-center-highlight: #E936A7;
+    --color-summary-profile-skill-anlysis: #fff9f3;
+    --color-summary-profile-skill-anlysis-highlight: #FFC48B;
+    --color-summary-profile-bppt: #eaeaff;
+    --color-summary-profile-bppt-highlight: #B4B3FF;
+    --color-summary-profile-amazon-flipkart: #f5faea;
+    --color-summary-profile-amazon-flipkart-highlight: #73AC00;
+    --color-summary-profile-lms: #fdf0f7;
+    --color-summary-profile-lms-highlight: #A50B5E;
+    --color-summary-profile-consult: #fff1e7;
+    --color-summary-profile-consult-highlight: #FF8833;
+    --color-summary-profile-content-desgn: #f5fbe5;
+    --color-summary-profile-content-desgn-highlight: #B2F302;
+    --color-summary-profile-google-business: #fff1f2;
+    --color-summary-profile-google-business-highlight: #F37F85;
+    --font-ibm-plex-sans: "IBM Plex Sans", sans-serif;
+    
+  }
+  
+
+.serviceCard details.tulip {
+    --highlight: var(--color-summary-tulip-highlight);
+    background: var(--color-summary-tulip);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.tulip p {
+    list-style-type: corona-tulip;
+  }
+  .serviceCard details.green {
+    --highlight: var(--color-summary-green-highlight);
+    background: var(--color-summary-green);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.green p {
+    list-style-type: corona-green;
+  }
+  .serviceCard details.dark-blue {
+    --highlight: var(--color-summary-dark-blue-highlight);
+    background: var(--color-summary-dark-blue);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.dark-blue p {
+    list-style-type: corona-dark-blue;
+  }
+  .serviceCard details.blue {
+    --highlight: var(--color-summary-blue-highlight);
+    background: var(--color-summary-blue);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.blue p {
+    list-style-type: corona-blue;
+  }
+  .serviceCard details.orange {
+    --highlight: var(--color-summary-orange-highlight);
+    background: var(--color-summary-orange);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.orange p {
+    list-style-type: corona-orange;
+  }
+  .serviceCard details.golden {
+    --highlight: var(--color-summary-golden-highlight);
+    background: var(--color-summary-golden);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.golden p {
+    list-style-type: corona-golden;
+  }
+  .serviceCard details.berry {
+    --highlight: var(--color-summary-berry-highlight);
+    background: var(--color-summary-berry);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.berry p {
+    list-style-type: corona-berry;
+  }
+  .serviceCard details.frost-bite {
+    --highlight: var(--color-summary-frost-bite-highlight);
+    background: var(--color-summary-frost-bite);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.frost-bite p {
+    list-style-type: corona-frost-bite;
+  }
+  .serviceCard details.lime {
+    --highlight: var(--color-summary-lime-highlight);
+    background: var(--color-summary-lime);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.lime p {
+    list-style-type: corona-lime;
+  }
+  .serviceCard details.pine-tree {
+    --highlight: var(--color-summary-pine-tree-highlight);
+    background: var(--color-summary-pine-tree);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.pine-tree p {
+    list-style-type: corona-pine-tree;
+  }
+  .serviceCard details.pdp {
+    --highlight: var(--color-summary-pdp-highlight);
+    background: var(--color-summary-pdp);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.pdp p {
+    list-style-type: corona-pdp;
+  }
+  .serviceCard details.alert {
+    --highlight: var(--color-summary-3-highlight);
+    background: var(--color-summary-3);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.alert p {
+    list-style-type: corona-alert;
+  }
+  .serviceCard details.violet {
+    --highlight: var(--color-summary-violet-highlight);
+    background: var(--color-summary-violet);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.violet p {
+    list-style-type: corona-violet;
+  }
+  .serviceCard details.info {
+    --highlight: var(--color-summary-2-highlight);
+    background: var(--color-summary-2);
+    border-left-color: var(--color-summary-2-highlight);
+  }
+  .serviceCard details.info p {
+    list-style-type: corona-info;
+  }
+  .serviceCard details.sheen-green {
+    --highlight: var(--color-summary-sheen-green-highlight);
+    background: var(--color-summary-sheen-green);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.sheen-green p {
+    list-style-type: corona-sheen-green;
+  }
+  .serviceCard details.sky-blue {
+    --highlight: var(--color-summary-sky-blue-highlight);
+    background: var(--color-summary-sky-blue);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.sky-blue p {
+    list-style-type: corona-sky-blue;
+  }
+  .serviceCard details.brown {
+    --highlight: var(--color-summary-brown-highlight);
+    background: var(--color-summary-brown);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.brown p {
+    list-style-type: corona-brown;
+  }
+  .serviceCard details.pigeon-blue {
+    --highlight: var(--color-summary-pigeon-blue-highlight);
+    background: var(--color-summary-pigeon-blue);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.pigeon-blue p {
+    list-style-type: corona-pigeon-blue;
+  }
+  .serviceCard details.lhd {
+    --highlight: var(--color-summary-lhd-highlight);
+    background: var(--color-summary-lhd);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.lhd p {
+    list-style-type: corona-lhd;
+  }
+  .serviceCard details.traffic-purple {
+    --highlight: var(--color-summary-traffic-purple-highlight);
+    background: var(--color-summary-traffic-purple);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.traffic-purple p {
+    list-style-type: corona-traffic-purple;
+  }
+  .serviceCard details.icd {
+    --highlight: var(--color-summary-icd-highlight);
+    background: var(--color-summary-icd);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.icd p {
+    list-style-type: corona-icd;
+  }
+  .serviceCard details.bnd {
+    --highlight: var(--color-summary-bnd-highlight);
+    background: var(--color-summary-bnd);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.bnd p {
+    list-style-type: corona-bnd;
+  }
+  .serviceCard details.vc {
+    --highlight: var(--color-summary-vc-highlight);
+    background: var(--color-summary-vc);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.vc p {
+    list-style-type: corona-vc;
+  }
+  .serviceCard details.bk {
+    --highlight: var(--color-summary-bk-highlight);
+    background: var(--color-summary-bk);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.bk p {
+    list-style-type: corona-bk;
+  }
+  .serviceCard details.orange {
+    --highlight: var(--color-summary-orange-highlight);
+    background: var(--color-summary-orange);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.orange p {
+    list-style-type: corona-orange;
+  }
+  .serviceCard details.insrnc {
+    --highlight: var(--color-summary-insrnc-highlight);
+    background: var(--color-summary-insrnc);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.insrnc p {
+    list-style-type: corona-insrnc;
+  }
+  .serviceCard details.sky-blue {
+    --highlight: var(--color-summary-sky-blue-highlight);
+    background: var(--color-summary-sky-blue);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.sky-blue p {
+    list-style-type: corona-sky-blue;
+  }
+  .serviceCard details.ismt {
+    --highlight: var(--color-summary-ismt-highlight);
+    background: var(--color-summary-ismt);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.ismt p {
+    list-style-type: corona-ismt;
+  }
+  .serviceCard details.frost-bite {
+    --highlight: var(--color-summary-frost-bite-highlight);
+    background: var(--color-summary-frost-bite);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.frost-bite p {
+    list-style-type: corona-frost-bite;
+  }
+  .serviceCard details.gs {
+    --highlight: var(--color-summary-gs-highlight);
+    background: var(--color-summary-gs);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.gs p {
+    list-style-type: corona-gs;
+  }
+  .serviceCard details.smp {
+    --highlight: var(--color-summary-smp-highlight);
+    background: var(--color-summary-smp);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.smp p {
+    list-style-type: corona-smp;
+  }
+  .serviceCard details.sud {
+    --highlight: var(--color-summary-sud-highlight);
+    background: var(--color-summary-sud);
+    border-left-color: var(--highlight);
+  }
+  .serviceCard details.sud p {
+    list-style-type: corona-sud;
+  }
+  .serviceCard details.profile-one-training {
+    --highlight: var(--color-summary-profile-one-training-highlight);
+    background: var(--color-summary-profile-one-training);
+    border-left-color: var(--color-summary-profile-one-training-highlight);
+  }
+  .serviceCard details.profile-one-training p {
+    list-style-type: corona-profile-one-training;
+  }
+  .serviceCard details.profile-online-training {
+    --highlight: var(--color-summary-profile-online-training-highlight);
+    background: var(--color-summary-profile-online-training);
+    border-left-color: var(--color-summary-profile-online-training-highlight);
+  }
+  .serviceCard details.profile-online-training p {
+    list-style-type: corona-profile-online-training;
+  }
+  .serviceCard details.profile-workshop {
+    --highlight: var(--color-summary-profile-workshop-highlight);
+    background: var(--color-summary-profile-workshop);
+    border-left-color: var(--color-summary-profile-workshop-highlight);
+  }
+  .serviceCard details.profile-workshop p {
+    list-style-type: corona-profile-workshop;
+  }
+  .serviceCard details.profile-gov-module {
+    --highlight: var(--color-summary-profile-gov-module-highlight);
+    background: var(--color-summary-profile-gov-module);
+    border-left-color: var(--color-summary-profile-gov-module-highlight);
+  }
+  .serviceCard details.profile-gov-module p {
+    list-style-type: corona-profile-gov-module;
+  }
+  .serviceCard details.profile-rec-video {
+    --highlight: var(--color-summary-profile-rec-video-highlight);
+    background: var(--color-summary-profile-rec-video);
+    border-left-color: var(--color-summary-profile-rec-video-highlight);
+  }
+  .serviceCard details.profile-rec-video p {
+    list-style-type: corona-profile-rec-video;
+  }
+  .serviceCard details.profile-gov-training {
+    --highlight: var(--color-summary-profile-gov-training-highlight);
+    background: var(--color-summary-profile-gov-training);
+    border-left-color: var(--color-summary-profile-gov-training-highlight);
+  }
+  .serviceCard details.profile-gov-training p {
+    list-style-type: corona-profile-gov-training;
+  }
+  .serviceCard details.profile-skill {
+    --highlight: var(--color-summary-profile-skill-highlight);
+    background: var(--color-summary-profile-skill);
+    border-left-color: var(--color-summary-profile-skill-highlight);
+  }
+  .serviceCard details.profile-skill p {
+    list-style-type: corona-profile-skill;
+  }
+  .serviceCard details.profile-training-center {
+    --highlight: var(--color-summary-profile-training-center-highlight);
+    background: var(--color-summary-profile-training-center);
+    border-left-color: var(--color-summary-profile-training-center-highlight);
+  }
+  .serviceCard details.profile-training-center p {
+    list-style-type: corona-profile-training-center;
+  }
+  .serviceCard details.profile-skill-anlysis {
+    --highlight: var(--color-summary-profile-skill-anlysis-highlight);
+    background: var(--color-summary-profile-skill-anlysis);
+    border-left-color: var(--color-summary-profile-skill-anlysis-highlight);
+  }
+  .serviceCard details.profile-skill-anlysis p {
+    list-style-type: corona-profile-skill-anlysis;
+  }
+  .serviceCard details.profile-bppt {
+    --highlight: var(--color-summary-profile-bppt-highlight);
+    background: var(--color-summary-profile-bppt);
+    border-left-color: var(--color-summary-profile-bppt-highlight);
+  }
+  .serviceCard details.profile-bppt p {
+    list-style-type: corona-profile-bppt;
+  }
+  .serviceCard details.profile-amazon-flipkart {
+    --highlight: var(--color-summary-profile-amazon-flipkart-highlight);
+    background: var(--color-summary-profile-amazon-flipkart);
+    border-left-color: var(--color-summary-profile-amazon-flipkart-highlight);
+  }
+  .serviceCard details.profile-amazon-flipkart p {
+    list-style-type: corona-profile-amazon-flipkart;
+  }
+  .serviceCard details.profile-lms {
+    --highlight: var(--color-summary-profile-lms-highlight);
+    background: var(--color-summary-profile-lms);
+    border-left-color: var(--color-summary-profile-lms-highlight);
+  }
+  .serviceCard details.profile-lms p {
+    list-style-type: corona-profile-lms;
+  }
+  .serviceCard details.profile-consult {
+    --highlight: var(--color-summary-profile-consult-highlight);
+    background: var(--color-summary-profile-consult);
+    border-left-color: var(--color-summary-profile-consult-highlight);
+  }
+  .serviceCard details.profile-consult p {
+    list-style-type: corona-profile-consult;
+  }
+  .serviceCard details.profile-content-desgn {
+    --highlight: var(--color-summary-profile-content-desgn-highlight);
+    background: var(--color-summary-profile-content-desgn);
+    border-left-color: var(--color-summary-profile-content-desgn-highlight);
+  }
+  .serviceCard details.profile-content-desgn p {
+    list-style-type: corona-profile-content-desgn;
+  }
+ 
+  .serviceCard details.profile-google-business {
+    --highlight: var(--color-summary-profile-google-business-highlight);
+    background: var(--color-summary-profile-google-business);
+    border-left-color: var(--color-summary-profile-google-business-highlight);
+  }
+  .serviceCard details.profile-google-business p {
+    list-style-type: corona-profile-google-business;
+  }
+ 

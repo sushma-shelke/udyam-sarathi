@@ -1,0 +1,109 @@
+.fa{
+    color: #F584D0;
+    text-align: center;
+    padding: 30px;
+    font-size: 46px;
+}
+.card{
+    padding: 15px;
+    margin: 10px;
+     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.01);
+transition: box-shadow 0.3s ease-in-out;
+border:0px;
+cursor: pointer;
+border-radius: 4px;
+/* height: 400px; */
+}
+/* .card:hover{
+    box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.3);
+} */
+
+.heading{
+    text-align: center;
+    color:#337AB7;
+}
+.tr1{
+    text-align: center;
+    color:#337AB7 ;
+}
+.para{
+    margin-left:10px ;
+}
+.train-card{
+    min-height:400px;
+}
+/* counters */
+
+.counter{
+    background: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+    width: 210px;
+    padding: 0 0 25px;
+    margin: 0 auto 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+    margin-top: 46px;
+}
+.counter:before{
+    content: "";
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px 0;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.07);
+    transform: translateX(-50%) rotate(45deg);
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+}
+.counter .counter-value{
+    color: #fff;
+    background: linear-gradient(to right, #495c76, #0F386F);
+    font-size: 38px;
+    font-weight: 300;
+    padding: 0 0 3px;
+    margin: 0 0 25px;
+    border-radius: 10px 10px 0 0;
+    display: block;
+}
+.counter h6{
+    color:#223150;
+    /* font-size: 18px; */
+    /* font-weight: 200; */
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    margin: 0 0 25px;
+}
+.counter .counter-icon{
+    color: #fff;
+    background: linear-gradient(to right, #495c76, #0F386F);
+    font-size: 40px;
+    line-height: 60px;
+    width: 65px;
+    height: 65px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.counter.purple .counter-value,
+.counter.purple .counter-icon{
+    background: linear-gradient(to right,#495c76,#0F386F);
+}
+.counter.purple h3{ color: #c452ef; }
+.counter.magenta .counter-value,
+.counter.magenta .counter-icon{
+    background: linear-gradient(to right,#495c76,#0F386F);
+}
+.counter.magenta h3{ color: #F06292; }
+.counter.yellow .counter-value,
+.counter.yellow .counter-icon{
+    background: linear-gradient(to right, #fecb4b, #e69814);
+}
+.counter.yellow h3{ color: #e69814; }
+@media screen and (max-width:990px){
+    .counter{ margin-bottom: 45px; }
+}
+.font-size{
+    color:#337AB7;
+}

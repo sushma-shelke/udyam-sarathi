@@ -1,0 +1,195 @@
+.iconBoxMainDiv{
+    width: 100%; 
+    display: inline-flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+.iconImageDiv{
+    display: flex;
+    justify-content: center;
+}
+.iconBoxSubDiv{
+    width: 25%;
+    display: block;
+}
+.iconBlockImage{
+    height: 70px;
+    width: 70px;  
+}
+.iconTitle{
+    font-size: 20px;
+    font-weight: 600;
+    color: #337AB7;
+    text-align: center;
+}
+.iconDescription{
+    font-size: 16px;
+    font-weight:400;
+    color: rgb(135, 135, 135);
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.descriptionBlock{
+    font-size: 16px;
+    font-weight:400;
+    color: rgb(124, 124, 124);
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.businessPlanning{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.serviceBlock{
+    font-size: 28px;
+    font-weight: 700;
+    color: #003366;
+}
+.serviceBlockName{
+    font-size: 24px;
+    font-weight: 700;
+    color: #FF9900;
+}
+
+  .serviceCard {
+    border-radius: 8px;
+    max-width: 24em;
+    width: 33.33%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .serviceCard h1 {
+    font-family: var(--font-ibm-plex-sans);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--color-title);
+    margin-bottom: 5px;
+  }
+  .serviceCard details {
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.05);
+    border-left: 15px solid gray;
+    padding: 10px;
+  }
+  .serviceCard details {
+    margin-top: 15px;
+  }
+  
+  .serviceCard details summary,
+  .serviceCard details p {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    font-family: var(--font-ibm-plex-sans);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: var(--color-title);
+    padding: 5px;
+    cursor: pointer;
+  }
+  .serviceCard details summary::-webkit-details-marker,
+  .serviceCard details p::-webkit-details-marker {
+    display: none !important;
+  }
+  
+  .serviceCard details summary::selection,
+  .serviceCard details p::selection {
+    background-color: var(--highlight);
+  }
+  .serviceCard details p {
+    display: list-item;
+    cursor: default;
+    margin-left: 3rem;
+    list-style-type: corona;
+  }
+  .serviceCard details summary::before {
+    cursor: pointer;
+    position: absolute;
+    display: inline-flex;
+    width: 1rem;
+    height: 1rem;
+    left: 0rem;
+    margin-right: 0.5rem;
+    content: url("data:image/svg+xml,%3Csvg width='100%' height='100%' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.6066 12H1.3934' stroke='%23202842' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 1.39343V22.6066' stroke='%23202842' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  }
+  .serviceCard details[open] summary {
+    font-weight: 700;
+  }
+  .serviceCard details[open] summary::before {
+    transform: rotate(45deg);
+    content: url("data:image/svg+xml,%3Csvg width='100%' height='100%' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.6066 12H1.3934' stroke='%23202842' stroke-width='3.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 1.39343V22.6066' stroke='%23202842' stroke-width='3.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  }
+  
+  .navbar-expand-lg .navbar-nav .nav-link{
+    font-size: 15px;
+    color: #337AB7;
+    margin-left: 10px;
+  }
+
+  .navbar .nav-item .nav-link.active {
+    background-color: #337AB7;
+    color: aliceblue;
+  }
+  .navbar .nav-item .nav-link:hover, .navbar .nav-item .nav-link.active {
+    background-color: #337AB7;
+    color: aliceblue;
+}
+.loginDiv{
+  background-color: #337AB7;
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  padding: 5px;
+}
+.navbar{
+  margin-top: 2.3rem !important;
+}
+.LoginButton{
+  background-color: #337AB7;
+  color: aliceblue;
+  font-size: 13px;
+  border: solid 1px;
+  border-radius: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.carousel {
+  position: relative;
+  margin-top: 7.5rem;
+}
+.navbar{
+  background-color: #fff !important;
+}
+.imageContainer{
+  display: flex;
+  padding-top: 7.5rem;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.aboutusDiv{
+  display: grid;
+  width: 31%;
+ padding: 5px;
+ border: 1px solid rgb(227, 233, 241);
+ border-radius: 12px;
+}
+.aboutusCardDiv{
+  width: 100%; 
+  display: inline-flex;
+  justify-content: center;
+}
+/* ------------------------ */

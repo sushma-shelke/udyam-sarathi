@@ -1,0 +1,4 @@
+.iconBoxMainDiv{
+    width: 100%; 
+    display: inline-flex;
+}
