@@ -73,10 +73,11 @@
 }
 .carousel {
     position: relative;
-    margin-top: 0rem;
-  }
+    margin-top: -2.8rem;
+}
 .imageContainer img{
     width: 88% !important;
+    margin-top: 1.5rem;
 }
 .aboutusDiv{
     width: 98%;
