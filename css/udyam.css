@@ -1,3 +1,8 @@
+.iconBOX{
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+}
 .iconBoxMainDiv{
     width: 100%; 
     display: inline-flex;
@@ -9,8 +14,15 @@
     justify-content: center;
 }
 .iconBoxSubDiv{
-    width: 25%;
+    width: 50%;
     display: block;
+    background-color: #3379b709;
+    display: block;
+    justify-content: center;
+    margin: 8px;
+    padding: 10px;
+    border: 1px solid #3379b73b ;
+    border-radius: 20px;
 }
 .iconBlockImage{
     height: 70px;
@@ -152,9 +164,9 @@
   width: 100%;
   padding: 5px;
 }
-.navbar{
+/* .navbar{
   margin-top: 2.3rem !important;
-}
+} */
 .LoginButton{
   background-color: #337AB7;
   color: aliceblue;
@@ -168,14 +180,14 @@
 }
 .carousel {
   position: relative;
-  margin-top: 7.5rem;
+  margin-top:2.5rem;
 }
 .navbar{
   background-color: #fff !important;
 }
 .imageContainer{
   display: flex;
-  padding-top: 7.5rem;
+  padding-top: 3.8rem;
   width: 100%;
   justify-content: center;
   margin-bottom: 20px;
