@@ -81,12 +81,13 @@
 .aboutusDiv{
     width: 98%;
     display: grid;
-    
+    margin-top: 10px    
 }
 .aboutusCardDiv{
     width: 100%;
      display: block;
     justify-content: center;
+    padding: 15px;
 }
 .aboutUsDescriptionBlock{
     display: grid;
