@@ -1,3 +1,8 @@
+.iconBOX{
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+}
 .iconBoxMainDiv{
     width: 100%; 
     display: inline-flex;
@@ -9,7 +14,7 @@
     justify-content: center;
 }
 .iconBoxSubDiv{
-    width: 25%;
+    width: 50%;
     display: block;
 }
 .iconBlockImage{

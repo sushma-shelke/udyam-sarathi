@@ -1,8 +1,13 @@
 @media screen and (max-width: 767px) {
+    .iconBOX{
+        display: grid;
+        width: 100%;
+        justify-content: center;
+      }
     .iconBoxMainDiv{
       width: 100%; 
       margin-top: 10px;
-      display: block !important;
+      display: inline-flex !important;
       justify-content: center;
   }
     .iconBoxSubDiv{
@@ -55,8 +60,7 @@
     padding-right: 5px;
 }
 
-element.style {
-}
+
 .carousel-indicators{
     margin-top: 86px;
     position: relative;
