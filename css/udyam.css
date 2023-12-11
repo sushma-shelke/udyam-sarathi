@@ -146,7 +146,7 @@
   .navbar-expand-lg .navbar-nav .nav-link{
     font-size: 15px;
     color: #337AB7;
-    margin-left: 10px;
+    margin-left: 9px;
   }
 
   .navbar .nav-item .nav-link.active {
@@ -233,5 +233,102 @@
   padding-left: 15px;
   padding-right: 15px;
   
+}
+.blogContainer {
+  padding-top: 7rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 20px;
+padding-right: 20px;
+background-color:#F9F8F8 ;
+}
+
+.blogCard {
+  width: 32%; 
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid rgb(205, 217, 234);
+  border-radius: 12px;
+  padding: 15px;
+  background-color: #fff;
+}
+.blogImage{
+  display: grid;
+  justify-content: center;
+  /* border: 1px solid rgb(205, 217, 234); */
+}
+.blogImage img{
+  border-radius: 12px;
+  height: 320px;
+  width: 350px;
+}
+.blogTitle{
+  font-weight: 600;
+  padding-top: 20px;
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.blogDesc{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #a7a7a7;
+    
+}
+.blogDetailTitle{
+  padding-top: 6rem;
+  text-align: center;
+}
+.blogDetailImage{
+  display: grid;
+  justify-content: center;
+}
+.blogDetailDesc{
+  padding: 12px;
+    color: #939393;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.blogDesc h1 {
+  line-height: 1rem !important; 
+  letter-spacing: 0rem !important;
+  font-size: 15px !important;
+    color: #939393;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #939393;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.blogDesc span p strong{
+  line-height: 1rem !important; 
+  letter-spacing: 0rem !important;
+  font-size: 15px !important;
+    color: #939393;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #939393;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.continueReading button{
+  border: none;
+  background-color: #fff;
+  color: #337AB7;
+  font-weight: 600;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.blogDetailDesc p strong{
+  color: #337AB7;
 }
 /* ------------------------ */
