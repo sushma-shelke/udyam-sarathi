@@ -19,7 +19,7 @@
     <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title> Sign up - Udyam Sarathi</title>
+    <title> Blog - Udyam Sarathi</title>
 
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap"
@@ -44,14 +44,6 @@
 
 <body>
 
-    
-   <!-- login div -->
-
-<!-- <div class="loginDiv fixed-top">
-    <a href="log-in.html">
-      <button class="LoginButton">Log in</button>
-    </a>
-  </div> -->
   
     <!-- Navigation -->
     <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
@@ -91,10 +83,11 @@
             </li>
   
             <li class="nav-item">
-              <a class="nav-link " href="BlogPage.html">Blog</a>
-            </li>
+                <a class="nav-link active" href="BlogPage.html">Blog</a>
+              </li> 
+
             <li class="nav-item">
-              <a class="nav-link active" href="sign-up.html">Register Myself</a>
+              <a class="nav-link " href="sign-up.html">Register Myself</a>
             </li>
   
             <li class="nav-item">
@@ -112,73 +105,9 @@
       </div>
     </nav>
 
-<!-- Header -->
-<header class="ex-header bg-sign-img">
-  <div class="container">
-      <div class="row">
-          <div class="col-xl-10 offset-xl-1">
-              <h1 class="text-center" style="padding-top: 15px;">Sign Up</h1>
-          </div> <!-- end of col -->
-      </div> <!-- end of row -->
-  </div> <!-- end of container -->
-</header> <!-- end of ex-header -->
-<!-- end of header -->
-​
-​
-<!-- Basic -->
-<div class="ex-form-1  pt-5 pb-5">
-  <div class="container">
-      <div class="row">
-          <div class="col-xl-6 offset-xl-3">
-              <div class="text-box mt-5 mb-5">
-                  <!-- <p class="mb-4 text-center">Fill out the form below to sign up for the service. <br> Already signed up? Then just
-                      <a class="blue btn-outline-sm mx-2" href="log-in.html">Log In</a>
-                  </p> -->
-​
-                  <!-- Sign Up Form -->
-                  <form id="signup-form">
-                      <div class="mb-4 form-floating">
-                          <input type="text" class="form-control" id="floatingInput2" placeholder="Your Business Name">
-                          <label for="floatingInput">Business Name</label>
-                      </div>
-                      <div class="mb-4 form-floating">
-                          <input type="text" class="form-control" id="floatingInput" placeholder="your Full Name">
-                          <label for="floatingInput">Full Name</label>
-                      </div>
-                      <div class="mb-4 form-floating">
-                          <input type="text" class="form-control" id="floatingInput3" placeholder="Your Address">
-                          <label for="floatingInput">Address</label>
-                      </div>
-                      <div class="mb-4 form-floating">
-                          <input type="text" class="form-control" id="floatingInput4" placeholder="name@example.com">
-                          <label for="floatingInput">E-mail ID</label>
-                      </div>
-                      <div class="mb-4 form-floating">
-                          <input type="number" class="form-control" id="floatingInput5" placeholder="Your Mobile Number">
-                          <label for="floatingInput">Mobile Number</label>
-                      </div>
-                      <div class="mb-4 form-floating">
-                          <textarea class="form-control" id="floatingBusinessIdea"
-                              placeholder="Business Idea or Business Type" rows="4"></textarea>
-                          <label for="floatingBusinessIdea">Business Idea or Business Type</label>
-                      </div>
-                      
-                      <div class="mb-4 form-check">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                          <label class="form-check-label" for="exampleCheck1">I agree with the site's stated <a
-                                  href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms &
-                                  Conditions</a></label>
-                      </div>
-                      <button type="submit" class="form-control-submit-button">Sign up</button>
-                  </form>
-                  <!-- end of sign up form -->
-​
-              </div> <!-- end of text-box -->
-          </div> <!-- end of col -->
-      </div> <!-- end of row -->
-  </div> <!-- end of container -->
-</div> <!-- end of ex-basic-1 -->
-<!-- end of basic -->
+<div id="blogDetailContainer">
+</div>
+
 
     <!-- new footer -->
     <footer class="footer-section">
@@ -231,7 +160,6 @@
                     <span>Follow us</span>
                     <a href="https://www.facebook.com/profile.php?id=61553188132211"><i class="fab fa-facebook-f facebook-bg"></i></a>
                     <a href="https://twitter.com/Udyamsarathi"><i class="fab fa-twitter twitter-bg"></i></a>
-                    <!-- <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a> -->
                     <a href="https://www.instagram.com/udyamsarathi/"><i class="fab fab fa-instagram instagram-bg"></i></a>
                   </div>
                 </div>
@@ -243,8 +171,6 @@
                   </div>
                   <ul>
                     <li><a href="index.html">Home</a></li>
-                    <!-- <li><a href="#">about</a></li> -->
-                    <!-- <li><a href="#">services</a></li> -->
                     <li> <a href="index.html#business">Business Section</a></li>
                     <li><a href="index.html#loan">loan Funding</a></li>
                     <li> <a href="index.html#traning">Traning Hub </a></li>
@@ -305,65 +231,25 @@
         <img src="https://shgeshop.com/wp-content/uploads/2023/11/icons8-arrow-up-100.png" alt="alternative">
     </button>
     <!-- end of back to top button -->
-    <!-- Scripts -->
- <script>
-   document.getElementById("signup-form").addEventListener("submit", function(event) {
-      event.preventDefault(); // Prevent the default form submission behavior
-
-      // Get mobile number from the form
-      const mobileNumber = document.getElementById("floatingInput5").value;
-
-      // Check if the mobile number is already registered
-      fetch(`https://kitintellect.tech/udyamsarathiapi/api_shg/public/check-registration/${mobileNumber}`)
-      .then(response => response.json())
-      .then(data => {
-         if (data.status === "success" && data.message === "User not registered") {
-            // User is not registered, proceed with registration
-            const formData = {
-               business_name: document.getElementById("floatingInput2").value,
-               full_name: document.getElementById("floatingInput").value,
-               address: document.getElementById("floatingInput3").value,
-               email: document.getElementById("floatingInput4").value,
-               mobile_number: mobileNumber,
-               business_idea: document.getElementById("floatingBusinessIdea").value
-            };
-
-            // Send a POST request to the registration endpoint
-            fetch("https://kitintellect.tech/udyamsarathiapi/api_shg/public/register", {
-               method: "POST",
-               headers: {
-                  "Content-Type": "application/json"
-               },
-               body: JSON.stringify(formData)
-            })
-            .then(response => response.json())
-            .then(data => {
-               if (data.status === "success") {
-                  // Registration successful
-                  alert("Registration successful!");
-               } else {
-                  // Registration failed
-                  alert("Registration failed. Please try again later.");
-               }
-            })
-            .catch(error => {
-               // Handle network errors or API issues here
-               console.error("Error:", error);
-               alert("Registration failed. Please try again later.");
-            });
-         } else {
-            // User is already registered
-            alert("User with this mobile number is already registered.");
-         }
-      })
-      .catch(error => {
-         // Handle network errors or API issues here
-         console.error("Error:", error);
-         alert("Error checking registration status. Please try again later.");
-      });
-   });
-</script>
-
+    <script>
+   
+        const urlParams = new URLSearchParams(window.location.search);
+        const encodedBlogData = urlParams.get('data');
+        const blogData = JSON.parse(decodeURIComponent(encodedBlogData));
+       
+        const blogDetailContainer = document.getElementById('blogDetailContainer');
+        blogDetailContainer.innerHTML = `
+        <div class="blogDetailTitle">
+            <h1 >${blogData.title}</h1>
+        </div>
+        <div class="blogDetailImage">
+            <img src="${blogData.featuredMediaUrl}" alt="Blog Image" style="max-width: 100%;">
+        </div>
+        <div class="blogDetailDesc">
+            <p>${blogData.content}</p>
+        </div>
+        `;
+    </script>
     <!-- Scripts -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
     <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->

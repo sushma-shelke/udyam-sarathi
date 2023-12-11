@@ -120,4 +120,17 @@
     padding-right: 15px;
     
   }
+  .blogCard {
+    width: 98%; 
+}
+.blogDetailTitle h1{
+    font-size: 1rem !important;
+    line-height: 1.5;
+    padding: 10px;
+  }
+  .blogImage img{
+    border-radius: 12px;
+    height: 280px;
+    width: 300px;
+  }
 }
