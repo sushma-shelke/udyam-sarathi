@@ -231,25 +231,60 @@
         <img src="https://shgeshop.com/wp-content/uploads/2023/11/icons8-arrow-up-100.png" alt="alternative">
     </button>
     <!-- end of back to top button -->
+
     <script>
-   
-        const urlParams = new URLSearchParams(window.location.search);
-        const encodedBlogData = urlParams.get('data');
-        const blogData = JSON.parse(decodeURIComponent(encodedBlogData));
-       
-        const blogDetailContainer = document.getElementById('blogDetailContainer');
-        blogDetailContainer.innerHTML = `
-        <div class="blogDetailTitle">
-            <h1 >${blogData.title}</h1>
+      const urlParams = new URLSearchParams(window.location.search);
+      const postId = urlParams.get('postId');
+  
+      if (postId) {
+          const apiUrl = `https://shgeshop.com/wp-json/wp/v2/posts/${postId}?_embed`;
+  
+          fetch(apiUrl)
+              .then(response => response.json())
+              .then(data => {
+                  console.log('Post data:', data);
+  
+                  const title = data.title.rendered;
+                  const content = data.content.rendered;
+
+                  if (data._embedded && data._embedded['wp:featuredmedia'] && data._embedded['wp:featuredmedia'][0]) {
+                      const featuredMediaUrl = data._embedded['wp:featuredmedia'][0].source_url;
+
+                      const blogDetailCard = createBlogDetailCard({ title, content, featuredMediaUrl });
+                      const blogDetailContainer = document.getElementById('blogDetailContainer');
+                      blogDetailContainer.appendChild(blogDetailCard);
+                  } else {
+                      console.error('Featured media data not found');
+                  }
+              })
+              .catch(error => console.error('Error fetching data:', error));
+      } else {
+          console.error('postId is missing in the URL');
+      }
+  
+      function createBlogDetailCard(data) {
+          const card = document.createElement('div');
+          card.className = 'blogDetailCard';
+  
+          card.innerHTML = `
+              <div class="blogDetailTitle">
+                  <h2>${data.title}</h2>
+              </div>
+              <div class="blogDetailImage">
+            <img src="${data.featuredMediaUrl}" alt="Blog Image" style="max-width: 100%;">
         </div>
-        <div class="blogDetailImage">
-            <img src="${blogData.featuredMediaUrl}" alt="Blog Image" style="max-width: 100%;">
-        </div>
-        <div class="blogDetailDesc">
-            <p>${blogData.content}</p>
-        </div>
-        `;
-    </script>
+              <div class="blogDetailContent">
+                  <p>${data.content}</p>
+              </div>
+            
+             
+          `;
+  
+          return card;
+      }
+  </script>
+  
+
     <!-- Scripts -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
     <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->

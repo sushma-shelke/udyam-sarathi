@@ -292,69 +292,58 @@
     <!-- end of back to top button -->
 
 
-<script>
-   const apiUrl = 'https://shgeshop.com/wp-json/wp/v2/posts';
-    const blogContainer = document.getElementById('blogContainer');
-
-    fetch(apiUrl)
-        .then(response => response.json())
-        .then(async data => {
-            for (const post of data) {
-                const title = post.title.rendered;
-                const content = post.content.rendered;
-
-                // image 
-                const featuredMediaUrl = post._links['wp:featuredmedia'][0].href;
-                const featuredMediaResponse = await fetch(featuredMediaUrl);
-                const featuredMediaData = await featuredMediaResponse.json();
-                const featuredMediaUrlValue = featuredMediaData.source_url;
-
-                const blogCard = createBlogCard({ title, content, featuredMediaUrl: featuredMediaUrlValue });
-                blogContainer.appendChild(blogCard);
-            }
-        })
-        .catch(error => console.error('Error fetching data:', error));
-   
-    function createBlogCard(data) {
-        const card = document.createElement('div');
-        card.className = 'blogCard';
-
-        card.innerHTML = `
-            <div class="blogImage">
-                <img src="${data.featuredMediaUrl}" alt="Blog Image">
-            </div>
-            <div class="blogTitle">
-                <span>${data.title}</span>
-            </div>
-            <div class="blogDesc">
-                <span>${data.content}</span>
-            </div>
-            <div class="continueReading">
-                <a href="BlogDetailPage.html?data=${encodeURIComponent(JSON.stringify(data))}" target="_blank">
-                    <button>Continue Reading...</button>
-                </a>
-            </div>
-        `;
-
-        return card;
-    }
-
-      function populateBlogCards() {
-        const blogContainer = document.getElementById("blogContainer");
-
-        blogData.forEach((entry) => {
-          const card = createBlogCard(entry);
-          blogContainer.appendChild(card);
-        });
+    <script>
+      const apiUrl = 'https://shgeshop.com/wp-json/wp/v2/posts';
+      const blogContainer = document.getElementById('blogContainer');
+  
+      fetch(apiUrl)
+          .then(response => response.json())
+          .then(async data => {
+              for (const post of data) {
+                  const title = post.title.rendered;
+                  const content = post.content.rendered;
+                  const postId = post.id;  // Add post ID
+  
+                  // image 
+                  const featuredMediaUrl = post._links['wp:featuredmedia'][0].href;
+                  const featuredMediaResponse = await fetch(featuredMediaUrl);
+                  const featuredMediaData = await featuredMediaResponse.json();
+                  const featuredMediaUrlValue = featuredMediaData.source_url;
+  
+                  const blogCard = createBlogCard({ title, content, featuredMediaUrl: featuredMediaUrlValue, postId });
+                  blogContainer.appendChild(blogCard);
+              }
+          })
+          .catch(error => console.error('Error fetching data:', error));
+  
+      function createBlogCard(data) {
+          const card = document.createElement('div');
+          card.className = 'blogCard';
+  
+          card.innerHTML = `
+              <div class="blogImage">
+                  <img src="${data.featuredMediaUrl}" alt="Blog Image">
+              </div>
+              <div class="blogTitle">
+                  <span>${data.title}</span>
+              </div>
+              <div class="blogDesc">
+                  <span>${data.content}</span>
+              </div>
+              <div class="continueReading">
+                  <a href="BlogDetailPage.html?postId=${data.postId}" target="_blank">
+                      <button>Continue Reading...</button>
+                  </a>
+              </div>
+          `;
+  
+          return card;
       }
+  
+  </script>
+  
 
-      function redirectToDetailPage(postId) {
-        const detailPageURL = `BlogDetailPage.html#${postId}`;
-        window.open(detailPageURL, "_blank");
-      }
 
-      populateBlogCards();
-    </script>
     <!-- Scripts -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Bootstrap framework -->
